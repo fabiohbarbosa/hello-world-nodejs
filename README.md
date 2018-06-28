@@ -56,4 +56,54 @@ Em um terminal execute o seguinte comando:
 npm install express --save
 ```
 
-*Após é possível verificar que o NPM adicionou a dependência ao arquivo `package.json`.*
+*Após a instalação é possível verificar que o NPM adicionou a dependência no arquivo `package.json`.*
+
+## Criar API Rest
+Crie o arquivo `index.js` na raíz do projecto com o conteúdo:
+```js
+// Importar a biblioteca do express
+const express = require('express')
+
+// Criar uma instância do express
+const app = express()
+
+// Criar o endpoint e retornar um JSON
+app.get('/api/hello-world', function (req, res) {
+    res.json({message: 'Hello World!'});
+});
+
+// Inciar o servidor na porta 3000
+app.listen(3000, function (){
+    console.log('Example app listening on port 3000!');
+});
+```
+
+## Executar a Aplicação
+Vamos executar nossa aplicação
+```sh
+node index.js
+```
+
+Agora podemos ir a um navegador e aceder a URL [http://localhost:3000/api/hello-world](http://localhost:3000/api/hello-world)
+
+Pronto! Construímos uma API REST de forma simples e rápida.
+
+Tão fácil como fritar um ovo, não?
+
+## Npm start
+Por padrão os projectos Node.js devem iniciar o script principal com o comando
+`npm start`, para que isso funcione é simples, basta adicionar o a chave `start` na chave
+`script` no package.json e definir qual o comando que inicia a aplicação.
+
+```json
+  "scripts": {
+    "start": "node index.js"
+  }
+```
+
+Agora tente iniciar o projecto com o comando
+```sh
+npm start
+```
+
+É isso ai! Espero ter ajudado com mais esse conhecimento ;)

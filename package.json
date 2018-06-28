@@ -4,7 +4,8 @@
   "description": "## Introdução ao Node.js Node.js é um intepretador da linguagem Javascript que permite a execução de código Javascript do lado do servidor.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
