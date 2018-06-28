@@ -1,0 +1,23 @@
+{
+  "name": "hello-world-nodejs",
+  "version": "1.0.0",
+  "description": "## Introdução ao Node.js Node.js é um intepretador da linguagem Javascript que permite a execução de código Javascript do lado do servidor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiohbarbosa/hello-world-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiohbarbosa/hello-world-nodejs/issues"
+  },
+  "homepage": "https://github.com/fabiohbarbosa/hello-world-nodejs#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
