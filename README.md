@@ -62,10 +62,10 @@ npm install express --save
 Crie o arquivo `index.js` na raíz do projecto com o conteúdo:
 ```js
 // Importar a biblioteca do express
-const express = require('express')
+const express = require('express');
 
 // Criar uma instância do express
-const app = express()
+const app = express();
 
 // Criar o endpoint e retornar um JSON
 app.get('/api/hello-world', function (req, res) {
@@ -73,7 +73,7 @@ app.get('/api/hello-world', function (req, res) {
 });
 
 // Inciar o servidor na porta 3000
-app.listen(3000, function (){
+app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
 });
 ```
